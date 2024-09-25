@@ -1,0 +1,14 @@
+/* src/components/Carousel.css */
+
+.carousel-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  

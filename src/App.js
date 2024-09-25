@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import React from 'react';
+import CarouselComponent from './components/Carousel';
+import Grid from './components/Grid';
+import './App.css'; // Create this CSS file for global styling
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>U.S. Presidents Timeline</h1>
       </header>
+      <main>
+        <CarouselComponent />
+        <Grid />
+      </main>
+      <footer>
+        <p>© 2024 U.S. Presidents Timeline</p>
+      </footer>
     </div>
   );
 }

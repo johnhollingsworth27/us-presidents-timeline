@@ -1,0 +1,23 @@
+/* src/components/PresidentList.css */
+.president-list {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth; /* Optional: adds smooth scrolling */
+  }
+  
+  .president-list > * {
+    flex: 0 0 auto; /* Prevents the cards from shrinking */
+    margin-right: 10px; /* Space between cards */
+  }
+  
+  /* Optional scrollbar styling for WebKit browsers */
+  .president-list::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .president-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  

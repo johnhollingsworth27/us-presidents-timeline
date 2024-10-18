@@ -3,7 +3,7 @@
 import React from 'react';
 import CarouselComponent from './components/Carousel';
 import Grid from './components/Grid';
-import './App.css'; // Create this CSS file for global styling
+import './App.css'; // Ensure this CSS file exists for global styling
 
 function App() {
   return (

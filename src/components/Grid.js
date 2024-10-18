@@ -13,6 +13,8 @@ const Grid = () => {
           <div key={president.id} className="grid-item">
             <img src={president.image} alt={president.name} className="grid-image" />
             <p>{president.name}</p>
+            <p>{president.term}</p>
+
           </div>
         ))}
       </div>

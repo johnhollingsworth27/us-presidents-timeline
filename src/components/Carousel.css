@@ -1,14 +1,60 @@
-/* src/components/Carousel.css */
-
 .carousel-container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 515px; /* Ensure the height contains all content */
+}
+
+.carousel-title {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.horizontal-scroll {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Make the height match the card heights */
+}
+
+.horizontal-scroll::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.slide {
+  flex: 0 0 250px; /* Ensuring all slides are the same size */
+  margin-right: 16px; /* Adjust spacing between cards */
+  transition: transform 0.3s ease;
+  display: inline-block;
+  height: 350px; /* Fixed height for all slides */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+    padding: 10px 0;
   }
-  
+
   .slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
+    margin-right: 12px;
   }
-  
+}
